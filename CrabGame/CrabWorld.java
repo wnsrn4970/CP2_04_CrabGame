@@ -27,13 +27,41 @@ public class CrabWorld extends World
     private void prepare()
     {
         // Crab 1마리 (231, 203) 좌표에 추가
-        
+        Crab crab01 = new Crab();
+        addObject(crab01, 231, 203);
         // Worm 10마리 랜덤 좌표에 추가
-        
+        Worm worm01 = new Worm();
+        addObject(worm01, Greenfoot.getRandomNumber(560), Greenfoot.getRandomNumber(560));
+        Worm worm02 = new Worm();
+        addObject(worm02, Greenfoot.getRandomNumber(560), Greenfoot.getRandomNumber(560));
+        Worm worm03 = new Worm();
+        addObject(worm03, Greenfoot.getRandomNumber(560), Greenfoot.getRandomNumber(560));
+        Worm worm04 = new Worm();
+        addObject(worm04, Greenfoot.getRandomNumber(560), Greenfoot.getRandomNumber(560));
+        Worm worm05 = new Worm();
+        addObject(worm05, Greenfoot.getRandomNumber(560), Greenfoot.getRandomNumber(560));
+        Worm worm06 = new Worm();
+        addObject(worm06, Greenfoot.getRandomNumber(560), Greenfoot.getRandomNumber(560));
+        Worm worm07 = new Worm();
+        addObject(worm07, Greenfoot.getRandomNumber(560), Greenfoot.getRandomNumber(560));
+        Worm worm08 = new Worm();
+        addObject(worm08, Greenfoot.getRandomNumber(560), Greenfoot.getRandomNumber(560));
+        Worm worm09 = new Worm();
+        addObject(worm09, Greenfoot.getRandomNumber(560), Greenfoot.getRandomNumber(560));
+        Worm worm10 = new Worm();
+        addObject(worm10, Greenfoot.getRandomNumber(560), Greenfoot.getRandomNumber(560));
         // Lobster 3마리 추가
+        Lobster labster01 = new Lobster();
+        Lobster labster02 = new Lobster();
+        Lobster labster03 = new Lobster();
         // 각 좌표는 (334, 65), (481, 481), (79, 270)
-        
+        addObject(labster01, 334, 65);
+        addObject(labster02, 481, 481);
+        addObject(labster03, 79, 270);
         // 100을 세고 움직이는 Turtle 추가
+        Turtle turtle01 = new Turtle(100);
         // 좌표는 랜덤
+        addObject(turtle01, Greenfoot.getRandomNumber(560), Greenfoot.getRandomNumber(560));
+       
     }
 }
